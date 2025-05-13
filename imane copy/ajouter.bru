@@ -6,6 +6,17 @@ meta {
 
 post {
   url: https://reqres.in/api/login
-  body: none
-  auth: inherit
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: QpwL5tke4Pnpja7X4
+}
+
+body:json {
+  {
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka"
+  }
 }
